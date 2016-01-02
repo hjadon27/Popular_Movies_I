@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A1887F"
+    tools:context="movies.mopular.bloom.mosi.popularmoviesi.MovieDetailActivity"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:id="@+id/linearLayout">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/movie_detail_poster"
+             />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="10dp">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/linearLayout2"
+                android:layout_centerHorizontal="true">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Title"
+                android:id="@+id/tv_title"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:gravity="center_horizontal"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Release Date"
+                android:id="@+id/tv_releasedate"
+                android:layout_below="@+id/tv_title"
+                android:layout_toLeftOf="@+id/tv_title"
+                android:layout_toStartOf="@+id/tv_title"
+                android:layout_gravity="center_horizontal"
+                android:textStyle="italic"
+                android:textColor="#b70101" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Vote"
+                android:id="@+id/tv_vote"
+                android:layout_below="@+id/tv_title"
+                android:layout_toRightOf="@+id/tv_title"
+                android:layout_toEndOf="@+id/tv_title"
+                android:layout_gravity="right"
+                android:gravity="right"
+                android:textStyle="italic"
+                android:textColor="#182fc0" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Average"
+                android:id="@+id/tv_average"
+                android:layout_below="@+id/tv_releasedate"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="right"
+                android:gravity="right"
+                android:textStyle="italic"
+                android:textColor="#182fc0" />
+
+
+            </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Plot :"
+            android:id="@+id/tv_plot_head"
+            android:layout_below="@+id/tv_average"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:textColor="#17851a" />
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/scroll_plot"
+                    android:layout_gravity="center_horizontal" >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/tv_plot"
+                android:layout_below="@+id/tv_average"
+                android:layout_centerHorizontal="true"
+                 />
+
+            </ScrollView>
+    </LinearLayout>
+
+
+</RelativeLayout>
